@@ -6,6 +6,10 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
+  get '/index' do
+    return erb :index
+  end
+
   post '/results' do
     answers = params.values
     @total = 0
