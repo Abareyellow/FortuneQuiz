@@ -7,7 +7,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/index' do
-    return erb :index.html
+    return erb :index
   end
 
   post '/results' do
